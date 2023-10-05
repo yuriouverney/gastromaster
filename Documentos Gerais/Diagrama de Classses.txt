@@ -1,0 +1,145 @@
+https://www.planttext.com/
+
+@startuml
+@startuml
+!theme black-knight
+
+class Category {
+  - id: int
+  - name: string
+  + getProducts(): Product[]
+  + createProduct(form: ProductForm): Product
+  + updateCategory(form: CategoryForm): Category
+  + deleteCategory(): void
+}
+
+class Coupon {
+  - id: int
+  - value: number
+  - order_min_value: number
+  - code: string
+  - description: string
+  - active: boolean
+  - expiration_date: Date
+  + getOrders(): Order[]
+  + createOrder(form: OrderForm): Order
+  + updateCoupon(form: CouponForm): Coupon
+  + deleteCoupon(): void
+}
+
+class OrderItem {
+  - id: int
+  - price: number
+  + getOrder(): Order
+  + getProduct(): Product
+}
+
+class Order {
+  - id: int
+  - status: string
+  - coupon_discount: number
+  - order_price: number
+  - paid_value: number
+  + getUser(): User
+  + getCoupon(): Coupon
+  + getOrderItems(): OrderItem[]
+  + createOrderItem(form: OrderItemForm): OrderItem
+  + updateOrder(form: OrderForm): Order
+  + deleteOrder(): void
+}
+
+class Permission {
+  - id: int
+  - type: string
+  + getUsers(): User[]
+}
+
+class Product {
+  - id: int
+  - name: string
+  - description: string
+  - price: number
+  - image: string
+  - promotion: boolean
+  - promotion_percent: number
+  + getCategory(): Category
+  + getOrderItems(): OrderItem[]
+  + createOrderItem(form: OrderItemForm): OrderItem
+  + updateProduct(form: ProductForm): Product
+  + deleteProduct(): void
+}
+
+class Reservation {
+  - id: int
+  - date: Date
+  - phone: string
+  - amountPeople: number
+  - obs: string
+  - status: string
+  + getUser(): User
+  + updateReservation(form: ReservationForm): Reservation
+  + deleteReservation(): void
+}
+
+class Setting {
+  - id: int
+  - name: string
+  - email: string
+  - phone: string
+  - address: string
+  - description: string
+  - short_description: string
+  - logo: string
+  - banner: string
+  - about_image: string
+  - opening_hour: object
+  + updateSetting(form: SettingForm): Setting
+}
+
+class UserProfile {
+  - id: int
+  - address: string
+  - phone: string
+  + getUser(): User
+  + updateUserProfile(form: UserProfileForm): UserProfile
+}
+
+class User {
+  - id: int
+  - name: string
+  - email: string
+  - password: string
+  - googleId: string
+  + verifyPassword(password: string): boolean
+  + getOrders(): Order[]
+  + getReservations(): Reservation[]
+  + getUserProfile(): UserProfile
+  + getPermission(): Permission
+  + createOrder(form: OrderForm): Order
+  + createReservation(form: ReservationForm): Reservation
+  + updateProfile(form: UserProfileForm): UserProfile
+  + updatePassword(password: string): void
+  + deleteAccount(): void
+}
+
+
+User --|> UserProfile
+User --|> Permission
+UserService --|> BaseCrudService
+SettingService --|> BaseCrudService
+Reservation --|> User
+ReservationService --|> BaseCrudService
+Product --|> Category
+ProductService --|> BaseCrudService
+Order --|> User
+Order --|> Coupon
+Order --|> OrderItem
+OrderService --|> BaseCrudService
+CouponService --|> BaseCrudService
+ChartService --|> BaseCrudService
+CategoryService --|> BaseCrudService
+
+@enduml
+
+
+@enduml

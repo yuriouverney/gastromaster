@@ -1,0 +1,74 @@
+<div class="start-pages">
+  <div class="row"> 
+    <div class="col-lg-12">
+      <mat-card class="cardWithShadow">
+        <mat-card-content class="p-24">
+          <div class="w-100">
+            <mat-card-title>Cadastrar Produto</mat-card-title>
+            <div class="col-lg-12 mt-4">
+
+              <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+                  <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="name" class="form-control" id="name" formControlName="name">
+                    <div *ngIf="productForm.get('name')?.invalid && (productForm.get('name')?.dirty || productForm.get('name')?.touched)">
+                      <div *ngIf="productForm.get('name')?.errors?.['required']">Nome é obrigatório.</div>
+                    </div>
+                  </div>        
+                  
+                  <div class="form-group">
+                    <label for="description">Descrição:</label>
+                    <input type="description" class="form-control" id="description" formControlName="description">
+                  </div>    
+
+                  <div class="form-group">
+                    <label for="price">Preço:</label>
+                    <input type="price" class="form-control" id="price" formControlName="price">
+                    <div *ngIf="productForm.get('price')?.invalid && (productForm.get('price')?.dirty || productForm.get('price')?.touched)">
+                      <div *ngIf="productForm.get('price')?.errors?.['required']">Preço é obrigatório.</div>
+                    </div>
+                  </div>    
+
+                  <div class="form-group">
+                    <label for="promotion">Promoção:</label>
+                    <select class="form-control" id="promotion" formControlName="promotion">
+                      <option *ngFor="let option of promotionOptions" [value]="option.value">
+                        {{ option.name }}
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="form-group" *ngIf="promotionItem">
+                    <label for="promotion_percent">Percentual de Desconto:</label>
+                    <input type="promotion_percent" class="form-control" id="promotion_percent" formControlName="promotion_percent">
+                  </div>    
+
+                  <div class="form-group">
+                    <label for="category_id">Categoria:</label>
+                    <select class="form-control" id="category_id" formControlName="category_id">
+                      <option *ngFor="let option of categories" [value]="option.id">{{ option.name }}</option>
+                    </select>
+                    <div *ngIf="productForm.get('category_id')?.invalid && (productForm.get('category_id')?.dirty || productForm.get('category_id')?.touched)">
+                      <div *ngIf="productForm.get('category_id')?.errors?.['required']">Categoria é obrigatória.</div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="image">Imagem:</label>
+                    <input type="file" accept="image/*" class="form-control" id="image" (change)="onFileChange($event)">
+                    <div *ngIf="productForm.get('image')?.invalid && (productForm.get('image')?.dirty || productForm.get('image')?.touched)">
+                        <div *ngIf="productForm.get('image')?.errors?.['required']">Imagem é obrigatória.</div>
+                    </div>
+                  </div> 
+                <!-- Botão de envio do formulário -->
+                <button type="button" class="btn btn-primary" (click)="onBack()">Voltar</button>   
+                <button type="submit" class="btn btn-primary ml-2">Enviar</button>  
+              </form>
+
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

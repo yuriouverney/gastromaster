@@ -1,0 +1,361 @@
+2023-05-11T01:43:07.552Z [31merror[39m: Error
+    at Query.run (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.select (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Function.findOne (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async Function.findOrCreate (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1411:21)
+    at async Strategy._verify (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\passport.js:19:24)
+2023-05-11T01:45:01.679Z [31merror[39m: Error
+    at Query.run (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.select (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Function.findOne (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async Function.findOrCreate (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1411:21)
+    at async Strategy._verify (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\passport.js:19:24)
+2023-05-11T01:45:09.573Z [31merror[39m: TokenError: Bad Request
+    at Strategy.OAuth2Strategy.parseErrorResponse (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:373:12)
+    at Strategy.OAuth2Strategy._createOAuthError (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:420:16)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:177:45
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:191:18
+    at passBackControl (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:132:9)
+    at IncomingMessage.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-05-11T01:45:23.098Z [31merror[39m: TokenError: Bad Request
+    at Strategy.OAuth2Strategy.parseErrorResponse (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:373:12)
+    at Strategy.OAuth2Strategy._createOAuthError (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:420:16)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:177:45
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:191:18
+    at passBackControl (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:132:9)
+    at IncomingMessage.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-05-11T01:45:30.023Z [31merror[39m: TokenError: Bad Request
+    at Strategy.OAuth2Strategy.parseErrorResponse (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:373:12)
+    at Strategy.OAuth2Strategy._createOAuthError (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:420:16)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:177:45
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:191:18
+    at passBackControl (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:132:9)
+    at IncomingMessage.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-05-11T01:45:40.160Z [31merror[39m: Error
+    at Query.run (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.select (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Function.findOne (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async Function.findOrCreate (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1411:21)
+    at async Strategy._verify (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\passport.js:19:24)
+2023-05-11T01:46:11.925Z [31merror[39m: Error
+    at Query.run (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.select (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Function.findOne (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async Function.findOrCreate (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1411:21)
+    at async Strategy._verify (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\passport.js:19:24)
+2023-05-11T01:46:34.573Z [31merror[39m: Error
+    at Query.run (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.select (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Function.findOne (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async Function.findOrCreate (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1411:21)
+    at async Strategy._verify (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\passport.js:19:24)
+2023-05-11T01:47:18.035Z [31merror[39m: Error
+    at Query.run (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.select (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Function.findOne (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async Function.findOrCreate (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1411:21)
+    at async Strategy._verify (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\passport.js:19:24)
+2023-05-11T01:47:28.975Z [31merror[39m: Error
+    at Query.run (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.select (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Function.findOne (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async Function.findOrCreate (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1411:21)
+    at async Strategy._verify (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\passport.js:19:24)
+2023-05-11T01:47:46.822Z [31merror[39m: Error
+    at Query.run (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.select (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Function.findOne (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async Function.findOrCreate (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\sequelize\lib\model.js:1411:21)
+    at async Strategy._verify (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\passport.js:19:24)
+2023-05-11T01:51:38.915Z [31merror[39m: TokenError: Bad Request
+    at Strategy.OAuth2Strategy.parseErrorResponse (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:373:12)
+    at Strategy.OAuth2Strategy._createOAuthError (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:420:16)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:177:45
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:191:18
+    at passBackControl (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:132:9)
+    at IncomingMessage.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-05-11T02:18:56.897Z [31merror[39m: TokenError: Bad Request
+    at Strategy.OAuth2Strategy.parseErrorResponse (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:373:12)
+    at Strategy.OAuth2Strategy._createOAuthError (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:420:16)
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\passport-oauth2\lib\strategy.js:177:45
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:191:18
+    at passBackControl (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:132:9)
+    at IncomingMessage.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-05-11T02:20:28.783Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'id')
+    at Strategy._verify (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\passport.js:33:42)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-12T16:50:53.676Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'name')
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:33:38
+    at Layer.handle [as handle_request] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:21:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-12T16:53:10.917Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'name')
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:33:38
+    at Layer.handle [as handle_request] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:21:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-12T16:53:47.142Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'name')
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:33:38
+    at Layer.handle [as handle_request] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:21:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-12T16:54:46.175Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'name')
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:33:38
+    at Layer.handle [as handle_request] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:21:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-12T16:55:00.166Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'name')
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:33:38
+    at Layer.handle [as handle_request] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:21:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-12T16:55:43.377Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'name')
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:33:38
+    at Layer.handle [as handle_request] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:21:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-12T16:55:48.854Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'name')
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:33:38
+    at Layer.handle [as handle_request] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:21:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-12T16:56:43.570Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'name')
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:33:38
+    at Layer.handle [as handle_request] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:21:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-12T16:57:14.690Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'name')
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:33:38
+    at Layer.handle [as handle_request] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:21:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-12T17:03:35.160Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'name')
+    at C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:33:38
+    at Layer.handle [as handle_request] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\src\middlewares\auth.js:21:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-13T19:49:50.073Z [31merror[39m: Error: undefined
+2023-05-13T19:50:10.147Z [31merror[39m: Error: undefined
+2023-05-13T19:50:25.210Z [31merror[39m: Error: undefined
+2023-05-13T19:50:48.673Z [31merror[39m: Error: undefined
+2023-05-13T19:53:20.373Z [31merror[39m: Error: undefined
+2023-05-13T19:53:31.691Z [31merror[39m: Error: undefined
+2023-05-13T19:53:31.710Z [31merror[39m: Error: undefined
+2023-05-13T19:53:31.719Z [31merror[39m: Error: undefined
+2023-05-13T19:53:31.729Z [31merror[39m: Error: undefined
+2023-05-13T19:53:31.751Z [31merror[39m: Error: undefined
+2023-05-13T19:54:43.133Z [31merror[39m: Error: undefined
+2023-05-13T19:54:49.364Z [31merror[39m: Error: undefined
+2023-05-13T19:56:08.062Z [31merror[39m: Error: undefined
+2023-05-13T19:57:00.490Z [31merror[39m: Error: undefined
+2023-05-13T19:57:10.070Z [31merror[39m: Error: undefined
+2023-05-13T19:58:43.154Z [31merror[39m: Error: undefined
+2023-05-13T20:01:30.582Z [31merror[39m: Error: undefined
+2023-05-13T20:01:30.644Z [31merror[39m: Error: undefined
+2023-05-13T20:02:18.195Z [31merror[39m: Error: undefined
+2023-05-13T20:03:03.756Z [31merror[39m: Error: undefined
+2023-05-13T20:04:24.787Z [31merror[39m: Error: undefined
+2023-05-15T15:00:21.683Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:00:58.022Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:01:53.805Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:02:24.456Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:02:46.089Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:02:46.836Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:02:47.264Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:31:33.030Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:31:38.416Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:32:30.161Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:33:16.932Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:33:36.118Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-05-15T15:33:57.941Z [31merror[39m: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Yuri\Desktop\TCC\GastroMaster\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+2023-10-01T01:08:47.483Z [31merror[39m: SyntaxError: Unexpected number in JSON at position 13
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\yurio\OneDrive\Área de Trabalho\tcc\gastromaster\backend\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\yurio\OneDrive\Área de Trabalho\tcc\gastromaster\backend\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (C:\Users\yurio\OneDrive\Área de Trabalho\tcc\gastromaster\backend\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\yurio\OneDrive\Área de Trabalho\tcc\gastromaster\backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\yurio\OneDrive\Área de Trabalho\tcc\gastromaster\backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="">
+  
+    <title> Feane </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- nice select  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  </head>
+<body>
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img [src]="banner" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section scroll-to-top" id="section-start">
+      <div style="width:100%;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      {{setting.name}}
+                    </h1>
+                    <p>
+                      {{setting.short_description}}
+                    </p>
+                    <div class="btn-box">
+                      <a style="text-decoration: none;" href="/index#section-menu">
+                        Ir para cardápio
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- offer section -->
+
+  <section class="offer_section layout_padding-bottom scroll-to-top" id="section-promotion">
+    <div class="offer_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            Pratos em Promoção
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6" *ngFor="let item of promotionProducts">
+            <div class="box ">
+              <div class="img-box">
+                <img style="min-height: -webkit-fill-available;" [src]="item.image" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  {{item.name}}
+                </h5>
+                <h6>
+                  <span>{{item.promotion_percent}}%</span> Off
+                </h6>
+                <div style="display: flex;" class="item-promotion-button">
+                <a style="text-decoration: none; display: flex; cursor: pointer" (click)="onAddItemCart(item.id)" class="options div-item-icon">
+                  <div>Compre agora </div> <div> <i style="padding-left: 40%;" class="ti ti-shopping-cart item-cart-icon "></i> </div>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end offer section -->
+
+  <!-- food section -->
+
+  <section class="food_section layout_padding-bottom scroll-to-top" id="section-menu">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Nosso Menu
+        </h2>
+      </div>
+
+
+      <ul class="filters_menu">
+        <li [ngClass]="{ 'active': selectedCategory === 0}" (click)="onSelectCategory(0)">Todos</li>
+        <li *ngFor="let item of category" [ngClass]="{ 'active': selectedCategory === item.id}" (click)="onSelectCategory(item.id ?? 0)">{{item.name}}</li>
+      </ul>
+
+      <div class="filters-content">
+        <div class="row grid">
+          <div class="col-sm-6 col-lg-4" *ngFor="let item of productsToShow">
+            <div class="box set-height-div" >
+              <div>
+                <div class="img-box">
+                  <img [src]="item.image" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    {{item.name}}
+                  </h5>
+                  <p>
+                    {{item.description}}
+                  </p>
+                  <div class="options div-item-price-icon">
+                    <h6 class="h6-item-menu-price">
+                      ${{item.price}}
+                    </h6>
+                    <a style="text-decoration: none; cursor: pointer" (click)="onAddItemCart(item.id)" class="options div-item-icon">
+                      <i class="ti ti-shopping-cart item-cart-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+      <div class="btn-box" *ngIf="selectedCategory !== 0">
+        <a style="text-decoration: none;" href="/index#section-menu" (click)="onSelectCategory(0)">
+          Ver Tudo
+        </a>
+      </div>
+
+  </section>
+
+  <!-- end food section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding scroll-to-top" id="section-description">
+    <div class="container  ">
+
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img [src]="aboutImage" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                {{setting.name}}
+              </h2>
+            </div>
+            <p>
+              {{setting.description}}
+            </p>
+            <a style="text-decoration: none;" href="/index#section-menu">
+              Ir para cardápio
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- book section -->
+  <section class="book_section layout_padding scroll-to-top" id="section-book-a-table">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Reservar Mesa
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form [formGroup]="reservationForm" (ngSubmit)="onSubmitReservation()">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" formControlName="name"  placeholder="Nome" readonly/>
+              </div>
+              <div>
+                <input type="email" id="email" formControlName="email" class="form-control" placeholder="Email" readonly/>
+              </div>
+              <div>
+                <input type="text" class="form-control" id="phone" formControlName="phone" placeholder="Telefone" />
+              </div>
+              <div>
+                <select class="form-control" id="amountPeople" formControlName="amountPeople" placeholder="Quantidade de Pessoas">
+                  <option value="" disabled selected hidden>Quantidade de Pessoas</option>
+                  <option *ngFor="let option of amountPeople" [value]="option">{{ option }}</option>
+                </select>
+              </div>
+              <div>
+                <input type="date" id="date" formControlName="date" class="form-control">
+                <div *ngIf="reservationForm.controls['date'].invalid && reservationForm.controls['date'].touched">
+                  <p class="error-message">Data inválida.</p>
+                </div>
+              </div>
+              <div>
+                <textarea class="form-control" style="min-height:150px" id="obs" formControlName="obs" placeholder="Digite suas observações aqui"></textarea>
+              </div>
+              <div class="btn_box">
+                <button>
+                  Reservar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container ">
+            <div id="googleMap"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end book section -->
+
+  <!-- end client section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Entre em Contato
+            </h4>
+            <div class="contact_link_box">
+              <a style="text-decoration: none;" href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  {{setting.address}}
+                </span>
+              </a>
+              <a style="text-decoration: none;" href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  {{setting.phone}}
+                </span>
+              </a>
+              <a style="text-decoration: none;" href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  {{setting.email}}
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a style="text-decoration: none;" href="" class="footer-logo">
+              {{setting.name}}
+            </a>
+            <p>
+              Nos siga em nossas redes sociais!
+            </p>
+            <div class="footer_social">
+              <a style="text-decoration: none;" href="">
+                <i style="color: black;" class="ti ti-brand-facebook"></i>
+              </a>
+              <a style="text-decoration: none;" href="">
+                <i style="color: black;" class="ti ti-brand-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Horário de Funciomaneto
+          </h4>
+          <div *ngFor="let item of openingHour">
+          <p>
+           {{item.day}} : {{item.value}}
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> Todos os direitos reservados para
+          <a href="">Gastro Master</a><br><br>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+
+</body>
+
+</html>

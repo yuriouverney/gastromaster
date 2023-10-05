@@ -1,0 +1,26 @@
+
+
+<div class="start-pages">
+  <div class="row"> 
+    <div class="col-lg-12">
+      <mat-card class="cardWithShadow">
+        <mat-card-content class="p-24">
+          <div class="w-100">
+            <mat-card-title>Relatórios do Sistema</mat-card-title>
+            <div class="col-lg-12 mt-4">
+
+              <canvas class="chart-css" baseChart
+                [data]="barChartData"
+                [options]="barChartOptions"
+                [plugins]="barChartPlugins"
+                [legend]="barChartLegend"
+                [type]="'bar'">
+              </canvas>
+
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+{ 
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },  
+  "plugins": [
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "settings": { "outputFile": "tmp/eslint-report.json"},
+  "overrides": [
+    {
+      "files": ["*src/*.js" ]
+      
+    }
+  ],
+  //"ignorePatterns": ["**/src/db/**/*.js", "**/src/test/**/*.js" ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+       "endOfLine":"auto"
+      }
+    ]
+   }
+}
+

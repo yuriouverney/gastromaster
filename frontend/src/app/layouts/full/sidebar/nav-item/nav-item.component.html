@@ -1,0 +1,16 @@
+<div mat-subheader *ngIf="item.navCap && hasPermission(item)">
+  {{ item.navCap }}
+</div>
+<a
+  mat-list-item
+  (click)="onItemSelected(item)"
+
+  class="menu-list-item"
+  *ngIf="!item.navCap && hasPermission(item)"
+>
+  <i-tabler
+    class="routeIcon mb-2"
+    name="{{ item.iconName }}"
+    matListItemIcon
+  ></i-tabler>
+  <span class="hide-menu">{{ item.displayName }}</span>

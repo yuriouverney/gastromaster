@@ -1,0 +1,66 @@
+<div class="blank-layout-container justify-content-center align-items-center bg-light-primary">
+  <div
+    class="position-relative row w-100 h-100 bg-gredient justify-content-center"
+  >
+    <div class="col-lg-4 d-flex align-items-center">
+      <mat-card class="cardWithShadow boxed-auth">
+        <mat-card-content class="p-32">
+          <div class="text-center">
+            <a [routerLink]="['/index']">
+              <img
+                [src]="logo" 
+                class="align-middle m-2"
+                alt="logo"
+              />
+            </a>
+          </div>
+
+          <div class="row m-t-24 custom-row text-center">
+            <div class="col-12 col-sm-6">
+              <a mat-stroked-button class="w-100" (click)="removeSessionStorage()" [href]="loginGoogleUrl" >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/assets/images/svgs/google-icon.svg"
+                    alt="google"
+                    width="16"
+                    class="m-r-8"
+                  />
+                  Entrar com Google
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="or-border m-t-30">ou entrar com</div>
+
+          <form [formGroup]="form" (ngSubmit)="onSignIn()">
+            <mat-form-field class="form-group w-100">
+              <mat-label for="email">Email</mat-label>
+              <input matInput type="email" class="form-control w-100" id="email" formControlName="email" placeholder="Digite seu Email">
+              <small *ngIf="f.email.invalid && (f.email.dirty || f.email.touched)" class="form-text text-danger">
+                Requer um Email válido.
+              </small>
+            </mat-form-field>
+            <mat-form-field class="form-group w-100">
+              <mat-label for="password">Senha</mat-label>
+              <input matInput type="password" class="form-control" id="password" formControlName="password" placeholder="Digite sua senha">
+              <small *ngIf="f.password.invalid && (f.password.dirty || f.password.touched)" class="form-text text-danger">
+                Requer uma senha válida.
+              </small>
+            </mat-form-field>
+            <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Login</button>
+          </form>
+          <span class="d-block f-w-500 text-center m-t-24"
+            >Novo por aqui?
+            <a
+              [routerLink]="['/auth/registrar']"
+              class="text-decoration-none text-primary f-w-500 f-s-14"
+            >
+              Crie sua conta</a
+            >
+          </span>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
